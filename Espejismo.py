@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img =cv2.imread("C:\\Users\\rover\\Downloads\\m1_oscura.png",0)
+img =cv2.imread("C:\\Users\\rover\\OneDrive\\Escritorio\\Tareas Grafi\\m1_oscura.png",0)
 x, y = img.shape
 
 #modo raw
