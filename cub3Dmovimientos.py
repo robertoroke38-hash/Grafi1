@@ -25,8 +25,8 @@ def draw_cube():
 
     # Configuración de la vista del cubo
     glLoadIdentity()
-    glTranslatef(math.sin(angle), 0.1, -5)  # Alejar el cubo para que sea visible
-    glRotatef(angle, 1, 0, 1)   # Rotar el cubo en todos los ejes
+    glTranslatef(0.1, 0.1, -6)  # Alejar el cubo para que sea visible
+    glRotatef(angle, 1, 1, 1)   # Rotar el cubo en todos los ejes
     
 
     #glRotatef(angle, 0, 1, 0)   # Rotar el cubo en todos los ejes
@@ -77,7 +77,7 @@ def draw_cube():
     glFlush()
 
     glfw.swap_buffers(window)  # Intercambiar buffers para animación suave
-    angle += 0.001# Incrementar el ángulo para rotación
+    angle += 0.02# Incrementar el ángulo para rotación
 
 def main():
     global window
@@ -102,7 +102,6 @@ def main():
 
     # Bucle principal
     while not glfw.window_should_close(window):
-        draw_cube()
         draw_cube()
         glfw.poll_events()
 
